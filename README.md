@@ -1,4 +1,4 @@
-# homekit-adapter
+# ring-adapter
 
 Ring device adapter for Mozilla WebThings Gateway
 
