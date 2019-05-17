@@ -1,0 +1,78 @@
+{
+  "name": "ring-adapter",
+  "display_name": "Ring",
+  "version": "0.0.1",
+  "description": "Ring device adapter.",
+  "author": "damooooooooooh",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "mozilla",
+    "iot",
+    "adapter",
+    "ring",
+    "camera"
+  ],
+  "homepage": "https://github.com/mozilla-iot/homekit-adapter",
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mozilla-iot/homekit-adapter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mozilla-iot/homekit-adapter/issues"
+  },
+  "dependencies": {
+    "doorbot": "^5.4.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0"
+  },
+  "files": [
+    "LICENSE",
+    "SHA256SUMS",
+    "index.js",
+    "lib/ring-adapter.js",
+    "lib/ring-device.js",
+    "lib/ring-property.js"
+  ],
+  "moziot": {
+    "api": {
+      "min": 2,
+      "max": 2
+    },
+    "plugin": true,
+    "exec": "{nodeLoader} {path}",
+    "config": {
+      "email": "",
+      "password": ""
+    },
+    "schema": {
+      "type": "object",
+      "description": "Enter your ring.com credentials",
+      "required": [
+        "email",
+        "password"
+      ],
+      "properties": {
+        "RingCredentials": {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string"
+            },
+            "password": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
