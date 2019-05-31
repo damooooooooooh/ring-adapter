@@ -18,14 +18,14 @@
     "ring",
     "camera"
   ],
-  "homepage": "https://github.com/mozilla-iot/homekit-adapter",
+  "homepage": "https://github.com/damooooooooooh/ring-adapter",
   "license": "MPL-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mozilla-iot/homekit-adapter.git"
+    "url": "https://github.com/damooooooooooh/ring-adapter.git"
   },
   "bugs": {
-    "url": "https://github.com/mozilla-iot/homekit-adapter/issues"
+    "url": "https://github.com/damooooooooooh/ring-adapter/issues"
   },
   "dependencies": {
     "doorbot": "^5.4.0"
