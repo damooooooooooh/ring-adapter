@@ -1,11 +1,11 @@
 # ring-adapter
-
 Ring device adapter for Mozilla WebThings Gateway.
 
-# Supported Devices
+## How does it work?
+The adapter polls the ring api using a configurable poll interval that you can set in the adpater configuration page.
 
-currently camera's and stickup cams.
+## Supported Devices
+Currently (doorbells) and stickup cams.
 
-# limitations
-
-currently only motion and dings (doorbell rings) are supported, no video or static images are available.
+## limitations
+Currently only motion and dings (doorbell rings) are supported, no video or static images are available.
