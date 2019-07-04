@@ -51,7 +51,8 @@
     "exec": "{nodeLoader} {path}",
     "config": {
       "email": "",
-      "password": ""
+      "password": "",
+      "pollInterval": 10
     },
     "schema": {
       "type": "object",
@@ -71,6 +72,12 @@
               "type": "string"
             }
           }
+        },
+        "pollInterval": {
+          "description": "Interval in seconds to poll the Ring api. Default 10.",
+          "type": "number",
+          "minimum": 8,
+          "maximum": 60
         }
       }
     }

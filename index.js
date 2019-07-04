@@ -15,5 +15,10 @@ module.exports = (addonManager, manifest) => {
     return;
   }
 
+  if (!config.pollInterval) {
+    errorCallback(manifest.name, 'Specify a poll Interval between ' + config.pollInterval.minimum + ' and ' + config.pollInterval.maximum);
+    return;
+  }
+
   new RingAdapter(addonManager, manifest);
 };
