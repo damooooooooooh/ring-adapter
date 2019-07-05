@@ -2,7 +2,7 @@
 
 const RingAdapter = require('./lib/ring-adapter');
 
-module.exports = (addonManager, manifest) => {
+module.exports = (addonManager, manifest, errorCallback) => {
   const config = manifest.moziot.config;
 
   if (!config.RingCredentials.email) {
