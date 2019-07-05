@@ -1,7 +1,7 @@
 {
   "name": "ring-adapter",
   "display_name": "Ring",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Ring device adapter.",
   "author": "damooooooooooh",
   "main": "index.js",
