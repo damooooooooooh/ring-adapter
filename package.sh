@@ -11,4 +11,5 @@ tar xzf ${TARFILE}
 cp -r node_modules ./package
 tar czf ${TARFILE} package
 rm -rf package
+shasum --algorithm 256 ${TARFILE} > ${TARFILE}.sha256sum
 echo "Created ${TARFILE}"
