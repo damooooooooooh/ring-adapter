@@ -53,20 +53,26 @@
     "plugin": true,
     "exec": "{nodeLoader} {path}",
     "config": {
-      "email": "",
-      "password": "",
+      "RingCredentials": {
+        "email": "",
+        "password": ""
+      },
       "pollInterval": 10
     },
     "schema": {
       "type": "object",
-      "description": "Enter your ring.com credentials",
       "required": [
-        "email",
-        "password"
+        "RingCredentials",
+        "pollInterval"
       ],
       "properties": {
         "RingCredentials": {
           "type": "object",
+          "description": "Enter your ring.com credentials",
+          "required": [
+            "email",
+            "password"
+          ],
           "properties": {
             "email": {
               "type": "string"
