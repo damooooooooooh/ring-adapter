@@ -3,3 +3,6 @@
 SHA256SUMS
 node_modules/
 package-lock.json
+package-to-manifest.py
+*.sha256sum
+*.tgz

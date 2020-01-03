@@ -1,7 +1,7 @@
 {
   "name": "ring-adapter",
   "display_name": "Ring",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Ring device adapter.",
   "author": "damooooooooooh",
   "main": "index.js",
@@ -16,7 +16,9 @@
     "iot",
     "adapter",
     "ring",
-    "camera"
+    "camera",
+    "doorbot",
+    "doorbell"
   ],
   "homepage": "https://github.com/damooooooooooh/ring-adapter",
   "license": "MPL-2.0",
@@ -28,7 +30,7 @@
     "url": "https://github.com/damooooooooooh/ring-adapter/issues"
   },
   "dependencies": {
-    "doorbot": "^5.4.0"
+    "ring-client-api": "^5.12.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
@@ -40,7 +42,8 @@
     "index.js",
     "lib/ring-adapter.js",
     "lib/ring-device.js",
-    "lib/ring-property.js"
+    "lib/ring-property.js",
+    "manifest.json"
   ],
   "moziot": {
     "api": {

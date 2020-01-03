@@ -1,0 +1,53 @@
+{
+  "author": "damooooooooooh", 
+  "description": "Ring device adapter.", 
+  "gateway_specific_settings": {
+    "webthings": {
+      "exec": "{nodeLoader} {path}", 
+      "primary_type": "adapter", 
+      "strict_max_version": "*", 
+      "strict_min_version": "0.10.0"
+    }
+  }, 
+  "homepage_url": "https://github.com/damooooooooooh/ring-adapter", 
+  "id": "ring-adapter", 
+  "license": "MPL-2.0", 
+  "manifest_version": 1, 
+  "name": "Ring", 
+  "options": {
+    "default": {
+      "email": "", 
+      "password": "", 
+      "pollInterval": 10
+    }, 
+    "schema": {
+      "description": "Enter your ring.com credentials", 
+      "properties": {
+        "RingCredentials": {
+          "properties": {
+            "email": {
+              "type": "string"
+            }, 
+            "password": {
+              "type": "string"
+            }
+          }, 
+          "type": "object"
+        }, 
+        "pollInterval": {
+          "description": "Interval in seconds to poll the Ring api. Default 10.", 
+          "maximum": 60, 
+          "minimum": 8, 
+          "type": "number"
+        }
+      }, 
+      "required": [
+        "email", 
+        "password"
+      ], 
+      "type": "object"
+    }
+  }, 
+  "short_name": "Ring", 
+  "version": "0.0.3"
+}
