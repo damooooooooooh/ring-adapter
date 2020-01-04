@@ -1,6 +1,6 @@
 {
   "author": "damooooooooooh", 
-  "description": "Ring device adapter.", 
+  "description": "Ring device adapter for Ring Doorbells, Lights and Sirens.", 
   "gateway_specific_settings": {
     "webthings": {
       "exec": "{nodeLoader} {path}", 
