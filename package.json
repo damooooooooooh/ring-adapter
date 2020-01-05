@@ -1,7 +1,7 @@
 {
   "name": "ring-adapter",
   "display_name": "Ring",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Ring device adapter for Ring Doorbells, Lights and Sirens.",
   "author": "damooooooooooh",
   "main": "index.js",
