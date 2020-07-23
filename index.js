@@ -10,8 +10,8 @@ module.exports = (addonManager, manifest, errorCallback) => {
     return;
   }
 
-  if (!config.RingCredentials.password) {
-    errorCallback(manifest.name, 'Ring Account Password is Required!');
+  if (!config.RingCredentials.password && !config.refreshToken) {
+    errorCallback(manifest.name, 'Ring Account Password / Refresh Token is Required!');
     return;
   }
 
