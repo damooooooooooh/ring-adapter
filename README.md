@@ -13,7 +13,18 @@ Currently (doorbells), lights, floodlights, sirens
 
 ## limitations
 Tested only with camera and floodlight devices.  Alarms not currently supported.
-2FA not supported
+
+## Ring Account 2FA Authentication
+The ring adapter now supports two-factor authentication using one-time passcodes and refresh tokens.
+To configure the ring device adapter:
+
+1. Enter your email and password associated with your Ring account on the ring-adapter add-ons configuration page.
+2. Initially leave the OTP (One-time passcode) field empty and click **Apply**. 
+3. You will then be prompted to provide the otp that was sent to your email or mobile (This may take a few seconds).
+4. Enter the OTP (Within 10 minutes) and click **Apply** again.
+5. Your Ring devices will then be discoverable on the Things page (Click the **+** and **Save** button).
+
+**Note:** *Should your refresh token become invalid or expire just re-enter your password and repeat the otp verification steps (2-4) above to be issued a new refresh token.*
 
 ## credits
 Thanks to dgreif for maintaining a robust implementation of the ring api

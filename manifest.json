@@ -18,6 +18,7 @@
     "default": {
       "email": "", 
       "password": "", 
+      "otp": "", 
       "pollInterval": 10
     }, 
     "schema": {
@@ -29,6 +30,10 @@
               "type": "string"
             }, 
             "password": {
+              "type": "string"
+            }, 
+            "otp": {
+              "description": "Enter the OTP sent via text/email",
               "type": "string"
             }
           }, 

@@ -30,7 +30,7 @@
     "url": "https://github.com/damooooooooooh/ring-adapter/issues"
   },
   "dependencies": {
-    "ring-client-api": "^5.12.0"
+    "ring-client-api": "^9.6.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
@@ -55,7 +55,8 @@
     "config": {
       "RingCredentials": {
         "email": "",
-        "password": ""
+        "password": "",
+        "otp": ""
       },
       "pollInterval": 10
     },
@@ -70,8 +71,7 @@
           "type": "object",
           "description": "Enter your ring.com credentials",
           "required": [
-            "email",
-            "password"
+            "email"
           ],
           "properties": {
             "email": {
@@ -79,13 +79,17 @@
             },
             "password": {
               "type": "string"
+            },
+            "otp": {
+              "description": "Enter the OTP sent via text/email",
+              "type": "string"
             }
           }
         },
         "pollInterval": {
           "description": "Interval in seconds to poll the Ring api. Default 10.",
           "type": "number",
-          "minimum": 8,
+          "minimum": 5,
           "maximum": 60
         }
       }
