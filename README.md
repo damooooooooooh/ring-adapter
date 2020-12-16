@@ -1,5 +1,5 @@
 # ring-adapter
-Ring device adapter for Mozilla WebThings Gateway.
+Ring device adapter for WebThings Gateway.
 
 ## How does it work?
 The adapter polls the ring api for activity using a configurable poll interval that you can set in the adpater configuration page.

@@ -12,7 +12,6 @@
     "lint": "eslint ."
   },
   "keywords": [
-    "mozilla",
     "iot",
     "adapter",
     "ring",
@@ -44,55 +43,5 @@
     "lib/ring-device.js",
     "lib/ring-property.js",
     "manifest.json"
-  ],
-  "moziot": {
-    "api": {
-      "min": 2,
-      "max": 2
-    },
-    "plugin": true,
-    "exec": "{nodeLoader} {path}",
-    "config": {
-      "RingCredentials": {
-        "email": "",
-        "password": "",
-        "otp": ""
-      },
-      "pollInterval": 10
-    },
-    "schema": {
-      "type": "object",
-      "required": [
-        "RingCredentials",
-        "pollInterval"
-      ],
-      "properties": {
-        "RingCredentials": {
-          "type": "object",
-          "description": "Enter your ring.com credentials",
-          "required": [
-            "email"
-          ],
-          "properties": {
-            "email": {
-              "type": "string"
-            },
-            "password": {
-              "type": "string"
-            },
-            "otp": {
-              "description": "Enter the OTP sent via text/email",
-              "type": "string"
-            }
-          }
-        },
-        "pollInterval": {
-          "description": "Interval in seconds to poll the Ring api. Default 10.",
-          "type": "number",
-          "minimum": 5,
-          "maximum": 60
-        }
-      }
-    }
-  }
+  ]
 }
