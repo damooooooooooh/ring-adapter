@@ -30,7 +30,8 @@
     "url": "https://github.com/damooooooooooh/ring-adapter/issues"
   },
   "dependencies": {
-    "ring-client-api": "^9.6.0"
+    "mkdirp": "^1.0.4",
+    "ring-client-api": "^9.15.3"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
