@@ -16,7 +16,7 @@ module.exports = (addonManager, manifest, errorCallback) => {
   }
 
   if (!config.pollInterval) {
-    errorCallback(manifest.name, 'Specify a poll Interval between ' + config.pollInterval.minimum + ' and ' + config.pollInterval.maximum);
+    errorCallback(manifest.name, `Specify a poll Interval between ${config.pollInterval.minimum} and ${config.pollInterval.maximum}`);
     return;
   }
 
