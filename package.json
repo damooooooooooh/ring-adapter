@@ -1,7 +1,7 @@
 {
   "name": "ring-adapter",
   "display_name": "Ring",
-  "version": "0.0.6",
+  "version": "0.0.9",
   "description": "Ring device adapter for Ring Doorbells, Lights and Sirens.",
   "author": "damooooooooooh",
   "main": "index.js",
@@ -12,7 +12,7 @@
     "lint": "eslint ."
   },
   "keywords": [
-    "mozilla",
+    "webthings",
     "iot",
     "adapter",
     "ring",
@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "mkdirp": "^1.0.4",
-    "ring-client-api": "^9.15.3"
+    "ring-client-api": "^9.18.6"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
