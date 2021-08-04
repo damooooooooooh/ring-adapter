@@ -6,3 +6,4 @@ package-lock.json
 package-to-manifest.py
 *.sha256sum
 *.tgz
+.DS_Store
