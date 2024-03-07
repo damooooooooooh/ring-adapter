@@ -19,6 +19,9 @@
       "email": "", 
       "password": "", 
       "otp": "", 
+      "recordOnDing": false,
+      "recordOnMotion": false,
+      "recordDuration": 20,
       "pollInterval": 10
     }, 
     "schema": {
@@ -35,6 +38,31 @@
             "otp": {
               "description": "Enter the OTP sent via text/email",
               "type": "string"
+            }
+          }, 
+          "type": "object"
+        }, 
+        "RecordingOptions": {
+          "properties": {
+            "recordOnDing": {
+              "description": "Record on ding",
+              "type": "boolean"
+            },
+            "recordOnMotion": {
+              "description": "Record on motion",
+              "type": "boolean"
+            },
+            "recordDuration": {
+              "description": "Number of seconds to record video (20secs = 2.5MB)", 
+              "maximum": 120, 
+              "minimum": 10, 
+              "type": "number"
+            },
+            "clearOldRecordingsAfter": {
+              "description": "Number of days to keep recordings for", 
+              "maximum": 120, 
+              "minimum": 10, 
+              "type": "number"
             }
           }, 
           "type": "object"

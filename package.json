@@ -30,8 +30,9 @@
     "url": "https://github.com/damooooooooooh/ring-adapter/issues"
   },
   "dependencies": {
+    "find-remove": "^4.0.4",
     "mkdirp": "^1.0.4",
-    "ring-client-api": "^12.1.0"
+    "ring-client-api": "9.18.6"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
@@ -58,6 +59,12 @@
         "email": "",
         "password": "",
         "otp": ""
+      },
+      "RecordingOptions": {
+        "recordOnDing": false,
+        "recordOnMotion": false,
+        "recordDuration": 20,
+        "clearOldRecordingsAfter": 7
       },
       "pollInterval": 10
     },
