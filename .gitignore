@@ -7,3 +7,4 @@ package-to-manifest.py
 *.sha256sum
 *.tgz
 .DS_Store
+build/

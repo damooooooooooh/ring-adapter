@@ -19,6 +19,9 @@
       "email": "", 
       "password": "", 
       "otp": "", 
+      "recordOnDing": false,
+      "recordOnMotion": false,
+      "recordDuration": 20,
       "pollInterval": 10
     }, 
     "schema": {
@@ -39,6 +42,31 @@
           }, 
           "type": "object"
         }, 
+        "RecordingOptions": {
+          "properties": {
+            "recordOnDing": {
+              "description": "Record on ding",
+              "type": "boolean"
+            },
+            "recordOnMotion": {
+              "description": "Record on motion",
+              "type": "boolean"
+            },
+            "recordDuration": {
+              "description": "Number of seconds to record video (20secs = 2.5MB)", 
+              "maximum": 120, 
+              "minimum": 10, 
+              "type": "number"
+            },
+            "clearOldRecordingsAfter": {
+              "description": "Number of days to keep recordings for", 
+              "maximum": 120, 
+              "minimum": 10, 
+              "type": "number"
+            }
+          }, 
+          "type": "object"
+        }, 
         "pollInterval": {
           "description": "Interval in seconds to poll the Ring api. Default 10.", 
           "maximum": 60, 
@@ -54,5 +82,5 @@
     }
   }, 
   "short_name": "Ring", 
-  "version": "0.0.9"
+  "version": "0.0.10"
 }
